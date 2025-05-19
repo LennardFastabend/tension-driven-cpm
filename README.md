@@ -1,34 +1,54 @@
 # Curved Tissue CPM
 
-## 1. Introduction
-This repository includes code for the automated setup, execution, and analysis of CPM (Cellular Potts Model) simulations of curved tissue development using CC3D. Growth is driven by local tissue tension, resulting in curvature-dependent proliferation under geometric confinement.
+## 1. Introduction  
+This repository contains code for the automated setup, execution, and analysis of Cellular Potts Model (CPM) simulations of curved tissue development using CompuCell3D (CC3D). Growth is driven by local tissue tension, resulting in curvature-dependent proliferation under geometric confinement.
 
 Example simulations and templates for various substrate geometries are provided.
 
+---
+
 ## 2. System Requirements
 
-- **CC3D**: Version 4.3.2 or higher *(specify exact version)*
-- **Python**: 3.11
-  Required packages:
-  - pathlib
-  - numpy
-  - matplotlib
-  - opencv-python
+- **CompuCell3D (CC3D):** Version 4.3.2 or higher  
+- **Python:** Version 3.11  
+- **Required Python packages:**  
+  - `pathlib`  
+  - `numpy`  
+  - `matplotlib`  
+  - `opencv-python`
+
+---
 
 ## 3. Repository Structure
-Different simulation scenarios are given in the "scenario" directory with at least one example simulation, that can be executed using CC3D. Based on this example simulation a template is given to set up parameter scans. 
 
-To set up and run parameter scans code is provided in the "parameter_scan" directory. The simulation output is generated in the respective directories of the individual simulations. Code for data analysis is given in the "data_analysis" directory. A simple example to run and analyse an exemplary parameter scan of a monolayer simulation is described in the following section.
+- **`scenario/`**  
+  Contains different simulation scenarios, each including at least one example simulation runnable with CC3D. Based on these example simulations, templates are provided for setting up parameter scans.
 
-To set up custom simulations it is advised to reuse one of the given examples and tweak simulation parameters as needed. Custom Substrate geometries can be generated similar to the code provides in "piff_generator.py". Note that the piff-file has to be exchanged in the simulation directory and the setup of the initial conditions has to refere to the new piff-file in the main simulation file.
+- **`parameter_scan/`**  
+  Contains code to set up and execute parameter scans. Simulation outputs are stored in their respective simulation directories.
 
-## 4. Monolayer Tutorial
-This section provides an example of how to perform and analyse a parameter scan using the ‘monolayer’ scan scenario. The structure of the code given here can be transferred to scans of other scenarios.
+- **`data_analysis/`**  
+  Contains scripts for analyzing simulation data.
 
-### Parameter Scan: Setup and Execution
-To set up an exemplary parameter scan of the monolayer scenario run the file "MainMonolayerParameterScan".
+---
 
-### Data Analysis
-To set up an exemplary parameter scan of the monolayer scenario run the file "MainMonolayerAnalysis".
+## 4. Custom Simulations
 
-# To Do: only publish needed code files! -> Sort
+To create custom simulations, it is recommended to reuse one of the provided examples and modify simulation parameters as needed. Custom substrate geometries can be generated similarly to the code in `piff_generator.py`.
+
+**Important:**  
+When using a custom substrate geometry, replace the `.piff` file in the simulation directory accordingly, and ensure the initial conditions in the main simulation file refer to the new `.piff` file.
+
+---
+
+## 5. Monolayer Tutorial
+
+This section demonstrates how to perform and analyze a parameter scan using the **monolayer** scan scenario. The structure presented here can be adapted to other scenarios.
+
+### Parameter Scan: Setup and Execution  
+Run the script `MainMonolayerParameterScan` to set up and execute an example parameter scan of the monolayer scenario.
+
+### Data Analysis  
+Run the script `MainMonolayerAnalysis` to analyze the results of the parameter scan.
+
+---
