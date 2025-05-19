@@ -561,7 +561,7 @@ class visualizer:
             ax.plot(time, mean_vol, label=labels[i], linewidth=0.4, color=color)
             ax.fill_between(time, mean_vol - std_dev_vol, mean_vol + std_dev_vol, alpha=0.1, color=color)
 
-        ax.set(xlim=(-1000, 100001), ylim=(-1000, 125000))  # Limits for Monolayer Figure
+        #ax.set(xlim=(-1000, 100001), ylim=(-1000, 125000))  # Limits for Monolayer Figure
 
         # Assign the legend to a variable
         legend = ax.legend(loc="upper left", ncol=1, columnspacing=0.3, labelspacing=0.3, bbox_to_anchor=(0, 1), fontsize=4, borderpad=0.2, handlelength=0.5)
