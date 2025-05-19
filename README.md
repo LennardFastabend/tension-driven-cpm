@@ -1,7 +1,7 @@
-# Curved Tissue CPM
+# Tension-Driven CPM
 
 ## 1. Introduction  
-This repository contains code for the automated setup, execution, and analysis of Cellular Potts Model (CPM) simulations of curved tissue development using CompuCell3D (CC3D). Growth is driven by local tissue tension, resulting in curvature-dependent proliferation under geometric confinement.
+This repository contains code for the automated setup, execution, and analysis of Cellular Potts Model (CPM) simulations using CompuCell3D (CC3D). Growth is driven by local tissue tension, resulting in curvature-dependent proliferation under geometric confinement.
 
 Example simulations and templates for various substrate geometries are provided.
 
