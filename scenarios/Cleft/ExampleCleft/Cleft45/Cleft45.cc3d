@@ -1,0 +1,5 @@
+<Simulation version="4.3.2">
+   <PythonScript Type="Python">Simulation/Cleft45.py</PythonScript>
+   <PIFFile Type="PIFFile">Simulation/Cleft45.piff</PIFFile>
+   <Resource Type="Python">Simulation/Cleft45Steppables.py</Resource>
+</Simulation>
